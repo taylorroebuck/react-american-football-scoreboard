@@ -5,14 +5,22 @@ import BottomRow from "./BottomRow";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
-  const [lionsScore, setScore] = useState(0);
+  const [lionsScore, setLionsScore] = useState(7);
+  const [tigersScore, setTigersScore] = useState(3);
 
-  const addTouchdown = event => {
-    setScore(lionsScore + 7);
+  const addLionsTouchdown = event => {
+    setLionsScore(lionsScore + 7);
   };
-  const addFieldgoal = event => {
-    setScore(lionsScore + 3);
-  }
+  const addLionsFieldgoal = event => {
+    setLionsScore(lionsScore + 3);
+  };
+
+  const addTigersTouchdown = event => {
+    setTigersScore(tigersScore + 7);
+  };
+  const addTigersFieldgoal = event => {
+    setTigersScore(tigersScore + 3);
+  };
 
   return (
     <div className="container">
@@ -28,7 +36,7 @@ function App() {
           <div className="timer">00:03</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
-            <div className="away__score">32</div>
+            <div className="away__score">{tigersScore}</div>
           </div>
         </div>
         <BottomRow />

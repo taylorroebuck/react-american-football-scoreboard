@@ -48,12 +48,12 @@ Follow these steps for completing your project.
 const [value, setValue] = useState(); // Give these better names, and decide whether you want to pass an initial score into the state hook as the initialValue
 ```
 
-- [ ] Set up the state value for the Tigers team score using a second state hook call
+- [X] Set up the state value for the Tigers team score using a second state hook call
 
 ### STEP 3 - Render the Scores to the DOM
 
-- [ ] The scores in the JSX are currently hardcoded to 32 points each. Remove the hardcoded values
-- [ ] Render the state values from what we just set up in steps 1 and 2
+- [X] The scores in the JSX are currently hardcoded to 32 points each. Remove the hardcoded values
+- [X] Render the state values from what we just set up in steps 1 and 2
 - [ ] Play around with different initial values to test if they are rendering on the DOM correctly
 
 ### STEP 4 - Add Click Functionality to Increment the Scores
